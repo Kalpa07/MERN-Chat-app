@@ -43,7 +43,7 @@ if(process.env.Node_ENV ==="production"){
     // app.use("/api/auth",authRoutes);
     //app.use("/api/messages",messageRoutes);
     app.get("*", (req,res)=>{
-        res.sendFile(path.join(___dirname,"../frontend","dist","index.html")); 
+        res.sendFile(path.join(__dirname,"../frontend","dist","index.html")); 
     });
     //
 }
