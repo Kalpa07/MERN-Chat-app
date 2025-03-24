@@ -21,8 +21,7 @@ const __dirname = path.resolve();//
 
 
 // app.use(express.json()); //(parse json) help to extract json data out of body in controllers
-app.use(express.json({ limit: "10mb" })); 
-app.use(express.urlencoded({ limit: "10mb", extended: true })); 
+app.use(express.json()); 
 
 app.use(cookieParser());//parses cookie
 app.use(cors({
